@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form>
+        <script>
+            
+            function results() {
+                var firstname = document.getElementById('firstname').value;
+                var email = document.getElementById('emailid').value;
+                var phone = document.getElementById('phone').value;
+                var gender = document.getElementById('gender').value;
+                var address = document.getElementById('address').value;
+                var dob = document.getElementById('dateofbirth').value;
+                var education = document.getElementById('education').value;
+                var hobbies = document.getElementById('hobbies').value;
+                function outputtable() {
+                    <table>
+                        <tr>
+                            <td>Name</td>
+                            <td>Gender</td>
+                            <td>email</td>
+                            <td>phone</td>
+                            <td>dob</td>
+                            <td>education</td>
+                            <td>hobbies</td>
+                            <td>address</td>
+                        </tr>
+                        <tr>
+                            <td>id=firstname</td>
+                            <td>id=gender</td>
+                            <td>id=emailid</td>
+                            <td>id=phone</td>
+                            <td>id=dateofbirth</td>
+                            <td>id=education</td>
+                            <td>id=hobbies</td>
+                            <td>id=address</td>
+                        </tr>
+                    </table>
+                }
+                document.write("outputtable()")
+            }
+        </script>
+        <fieldset>
+            <legend>
+                <strong>Registration Form</strong>
+            </legend>
+            <table>
+                <tr>
+                    <td>First Name </td>
+                    <td><input type="text" id="firstname" /></td>
+                    <td>Middle Name </td>
+                    <td><input type="text" id="middlename" /></td>
+                    <td>Last Name </td>
+                    <td><input type="text"  id="lastname" /></td>
+                </tr>
+                <tr>
+                    <td>Email </td>
+                    <td><input type="text" id="emailid" /></td>
+                    <td>Phone Number </td>
+                    <td><input type="text" id="phone"/></td>
+                    <td>Gender</td>
+                    <td><input type="radio" id="gender" name="G" />M<input type="radio" id="gender" name="G" />F</td>
+                </tr>
+                <tr>
+                    <td>Address </td>
+                    <td><textarea rows="8" id="address"></textarea></td>
+                    <td>DOB </td>
+                    <td><input type="date" id="dateofbirth" /></td>
+                </tr>
+                <tr>
+                    <td>Education</td>
+                    <td>
+                        <select id="education">
+                            <option>Select</option>
+                            <option>B.E.</option>
+                            <option>M.Tech</option>
+                            <option>BCA</option>
+                            <option>MCA</option>
+                        </select>
+                    </td>
+                    <td>Hobbies<input type="checkbox" id="hobbies" /></td>
+                    <td>Music<input type="checkbox"  id="hobbies"/></td>
+                    <td>Cricket<input type="checkbox"  id="hobbies"/></td>
+                    <td>Others<input type="checkbox" id="hobbies"/></td>
+                    <td>
+                        <input type="button" value="Show" onclick="return results();" />
+                    </td>
+                </tr>             
+            </table>
+        </fieldset>               
+    
+    </form>
+</body>
+</html>
