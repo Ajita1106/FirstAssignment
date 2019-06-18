@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -17,31 +17,16 @@
                 var dob = document.getElementById('dateofbirth').value;
                 var education = document.getElementById('education').value;
                 var hobbies = document.getElementById('hobbies').value;
-                function outputtable() {
-                    <table>
-                        <tr>
-                            <td>Name</td>
-                            <td>Gender</td>
-                            <td>email</td>
-                            <td>phone</td>
-                            <td>dob</td>
-                            <td>education</td>
-                            <td>hobbies</td>
-                            <td>address</td>
-                        </tr>
-                        <tr>
-                            <td>id=firstname</td>
-                            <td>id=gender</td>
-                            <td>id=emailid</td>
-                            <td>id=phone</td>
-                            <td>id=dateofbirth</td>
-                            <td>id=education</td>
-                            <td>id=hobbies</td>
-                            <td>id=address</td>
-                        </tr>
-                    </table>
-                }
-                document.write("outputtable()")
+
+                document.getElementById('firstname2').innerHTML = firstname;
+                document.getElementById('email2').innerHTML = emailid;
+                document.getElementById('gender2').innerHTML = gender;
+                document.getElementById('phone2').innerHTML = phone;
+                document.getElementById('dob2').innerHTML = dateofbirth;
+                document.getElementById('education2').innerHTML = education;
+                document.getElementById('hobbies2').innerHTML = hobbies;
+                document.getElementById('address2').innerHTML = address;
+                
             }
         </script>
         <fieldset>
@@ -92,7 +77,39 @@
                 </tr>             
             </table>
         </fieldset>               
-    
+        <table border="1" cellpadding="10" cellspacing="0">
+            <tr>
+                <td>Name</td>
+                <td id=firstname2></td>
+                </tr>
+            <tr>
+                <td>Gender</td>
+                <td id=gender2></td>
+                </tr>
+            <tr>
+                <td>email</td>
+                <td id="email2"></td>
+                </tr>
+            <tr>
+                <td>phone</td>
+                <td id="phone2"></td>
+                </tr>
+            <tr>
+                <td>dob</td>
+                <td id="dob2"></td>
+                </tr>
+            <tr>
+                <td>education</td>
+                <td id="education2"></td>
+                </tr>
+            <tr>
+                <td>hobbies</td>
+                <td id="hobbies2"></td>
+                </tr>
+            <tr>
+                <td>address</td>
+                <td id="address2"></td>
+        </table>
     </form>
 </body>
 </html>
